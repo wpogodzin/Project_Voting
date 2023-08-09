@@ -39,8 +39,7 @@ function MyButton({ count, onClick, player }) {
   } 
 
   /* calc. % of voted */
-  function localPercentage(count_local,count){
-    
+  function localPercentage(count_local,count){  
     return ((count_local / count * 100).toFixed(2)
     );       
   }

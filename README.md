@@ -6,9 +6,11 @@
 
 2. Structure:index.html --> main.jsx(import App.jsx,index.css) --> App.jsx(import Foto for displaying foto of players)
 
-3. What's the next: 1.rendering lists for containers(foto of player + button(left))
-                    2.foto for every players
-                    3.styles for buttons
+3. What's the next: 
+- rendering lists for containers(foto of player + button(left))
+- foto for every players
+- to correct function localPercentage(div. by 0 when it starts)
+- new style for buttons 
 
 4. I put these files in '.gitignore' folder:
 -    .eslintrc.cjs
