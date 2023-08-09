@@ -1,12 +1,13 @@
 import { useState } from 'react';
-/* module of placing foto of best players */
+
+/* module to place foto of best players */
 import Foto from './Foto.jsx'
 
 export default function MyApp() {
+
   /* 'const' and f.'handleClick' in MyApp are to move the state 
   from the individual buttons “upwards” to share total clicks 
   The information you pass down like this is called props.*/
-
   const [count, setCount] = useState(0);
 
   function handleClick() {
@@ -14,10 +15,13 @@ export default function MyApp() {
   }
 
   return (
-    /* placing mutual foto and calling 4 times MyButton 
-    for voting for 4 players */
+
+    /* 'Foto'placing mutual foto and calling 4 times MyButton 
+     to vote for 4 players */
+    /* in 'MyButton' we transfer data: count,onClick and player
+     from up to down(props) */
     <div>
-      
+  
       <Foto /> 
 
       <MyButton count={count} onClick={handleClick} player = "Maradona"/>
@@ -31,8 +35,8 @@ export default function MyApp() {
 
 function MyButton({ count, onClick, player }) {
 
-  /* 'count_local, and f. 'handleClick_local' are fordeveloping 
-  new/local counter that counts clicks on every seperate button */
+  /* 'count_local, and f. 'handleClick_local' are for developing 
+  new(local) counter that counts clicks on every separate button */
   const [count_local, setCount_local] = useState(0);
   function handleClick_local(){
     setCount_local(count_local + 1);
@@ -40,15 +44,24 @@ function MyButton({ count, onClick, player }) {
 
   /* calc. % of voted */
   function localPercentage(count_local,count){  
-    return ((count_local / count * 100).toFixed(2)
-    );       
+    if (count == 0) {
+      return 0;
+    }
+    else 
+    { 
+      return((count_local / count * 100).toFixed(2));
+    }        
   }
-  
-  return (
+  /* end calc. % of voted */
+
+  return(
+
     /* using construction 'onClick={() => {onClick();handleClick_local()}}'
     in '<button>' allows to set two or more counters */
     <button onClick={() => {onClick();handleClick_local()}}>
-      {player}<br/>Clicked {count_local} times ({localPercentage(count_local,count)}%)<br/>Totally voted {count}
+      {player} <br/>
+      Clicked {count_local} times ({localPercentage(count_local,count)}%) <br/>
+      Totally voted {count}
     </button>
   );
 }
