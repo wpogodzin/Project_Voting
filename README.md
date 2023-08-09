@@ -9,7 +9,7 @@
 3. What's the next: 
 - rendering lists for containers(foto of player + button(left))
 - foto for every players
-- to correct function localPercentage(div. by 0 when it starts)
++ to correct function localPercentage(div. by 0 when it starts): '+' is already done
 - new style for buttons 
 
 4. I put these files in '.gitignore' folder:
