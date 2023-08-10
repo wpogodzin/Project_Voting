@@ -6,24 +6,28 @@
 
 2. Structure:index.html --> main.jsx(import App.jsx,index.css) --> App.jsx(import Foto for displaying foto of players)
 
-3. What's the next: 
-- rendering lists for containers(foto of player + button(left))
-- foto for every players
-+ to correct function localPercentage(div. by 0 when it starts): '+' is already done
-- new style for buttons 
-
-4. I put these files in '.gitignore' folder:
+3. I put these files in '.gitignore' folder:
 -    .eslintrc.cjs
 -    package-lock.json
 -    package.json
 -    vite.config.js
 
 
-5. So we are driving only these files and folders: 
+4. So we are driving only these files and folders: 
 -	README.md
 -	index.html
 -	public/
--   src(main.jsx,App.jsx,Foto.jsx,index.css)                   
+-   src(main.jsx,App.jsx,Foto.jsx,index.css) 
+
+5. What's the next: 
++ rendering lists for containers(foto of player + button(left)): '+/-' is done by using display : "flex",next - to try rendering lists
+- foto for every players
++ to correct function localPercentage(div. by 0 when it starts): '+' is already done
+- new style for buttons  
+
+6. This version will be placed in branch:   f_container :
+   - in App.jsx: -2 blocks, +1 block
+   - in Foto.jsx: 1 changes        
 
 
 

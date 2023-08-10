@@ -13,13 +13,36 @@ export default function MyApp() {
   function handleClick() {
     setCount(count + 1);
   }
-
+  /*1+ How to place a players's info in one line - using "flex"*/
   return (
+    <>
+        <h1 style = {{textAlign: "center"}}>
+          Who is the best football player? 
+        </h1>
+
+        <div style ={{display: "flex",
+          justifyContent: "center",
+          alignItems: "center"}}>
+
+        <h1 >Players</h1>
+        <Foto /> 
+        <MyButton count={count} onClick={handleClick} player = "Players"/>
+
+        </div>
+    </>
+  );
+  /*1+ */
+
+  /*1-
+  return (
+  1-*/ 
+
 
     /* 'Foto'placing mutual foto and calling 4 times MyButton 
      to vote for 4 players */
     /* in 'MyButton' we transfer data: count,onClick and player
      from up to down(props) */
+  /*2-   
     <div>
   
       <Foto /> 
@@ -31,8 +54,9 @@ export default function MyApp() {
 
     </div>
   );
+  2-*/
 }
-
+  
 function MyButton({ count, onClick, player }) {
 
   /* 'count_local, and f. 'handleClick_local' are for developing 
