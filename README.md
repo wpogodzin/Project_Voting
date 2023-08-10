@@ -27,7 +27,7 @@
 
 6. This version will be placed in branch:   f_container :
    - in App.jsx: -2 blocks, +1 block
-   - in Foto.jsx: 1 changes        
+   - in Foto.jsx: 1 changesgit        
 
 
 
