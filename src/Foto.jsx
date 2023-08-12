@@ -1,6 +1,6 @@
 const user = {
-    names: 'Maradona  Messi  Pele  Ronaldo',
-    imageUrl: 'https://e1.pxfuel.com/desktop-wallpaper/877/133/desktop-wallpaper-maradona-pele-messi-or-ronaldo-just-who-is-football-s-greatest-player-messi-and-maradona.jpg',
+    name: 'Maradona',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Maradona-Mundial_86_con_la_copa.JPG/164px-Maradona-Mundial_86_con_la_copa.JPG',
     /*1 only imageSize was decreased from 900 to 200 1*/
     imageSize: 200
 
@@ -10,8 +10,8 @@ const user = {
       <>
         <img
           className="avatar"
-          src={user.imageUrl}
-          alt={'Photo of ' + user.names}
+          src={user.imageUrl}  
+          alt={'Photo of ' + user.name}
           style={{
             width: user.imageSize,
             height: user.imageSize
@@ -19,5 +19,5 @@ const user = {
         />
       </>
     );
-  }
-  
+    }
+    

@@ -24,9 +24,9 @@ export default function MyApp() {
           justifyContent: "center",
           alignItems: "center"}}>
 
-        <h1 >Players</h1>
+        <h1 >Maradona</h1>
         <Foto /> 
-        <MyButton count={count} onClick={handleClick} player = "Players"/>
+        <MyButton count={count} onClick={handleClick} player = "Maradona"/>
 
         </div>
     </>
