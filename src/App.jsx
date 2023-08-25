@@ -9,6 +9,10 @@ export default function MyApp() {
   */
   const [count, setCount] = useState(0);
   function handleClick() {
+
+  /* you can vote for one player */
+    if (count > 0) {return};
+
     setCount(count + 1);
   }
 
@@ -74,6 +78,10 @@ export default function MyApp() {
     */
     const [count_local, setCount_local] = useState(0);
     function handleClick_local(){
+
+    /* you can vote for one player */
+      if (count > 0) {return};
+      
       setCount_local(count_local + 1);
     } 
 

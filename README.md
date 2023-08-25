@@ -1,4 +1,9 @@
 # My comments:
+Last task from Bartek(24.08.23): you vote only for one player
+Decision: including operaror 'if count > 0 return' in two handlers:
+          - handleClick
+          - handleClick_local
+
 0. This project  is according https://react.dev/learn 
 
 1. Project_Voting_container is designed to define who is the best football player   by voting(another version of Project_Voting).
@@ -47,7 +52,8 @@ index.html --> 'main'(import 'App',index.css) --> 'App'
 
 6. Changes: all in detailed commentaries and README.md
 
-7. Next idea: to develop back-end for changing data with server (from different computors)
+7. Tas
+
 
 
 
